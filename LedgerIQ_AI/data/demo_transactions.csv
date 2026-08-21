@@ -1,0 +1,221 @@
+date,description,amount,category,client
+2026-03-24,Client Gamma invoice payment,2646.79,Revenue,Client Gamma
+2026-01-13,Client Beta invoice payment,3475.16,Revenue,Client Beta
+2026-01-25,Google Ads marketing,-302.27,Marketing,
+2026-05-10,Office rent,-819.25,Rent,
+2026-04-22,AWS cloud infrastructure,-157.15,Infrastructure,
+2026-01-24,Project management software,-48.51,Software,
+2026-07-31,Team salary payroll,-1514.45,Payroll,
+2026-02-27,Business travel fuel,-147.99,Travel,
+2026-01-16,Team salary payroll,-1773.49,Payroll,
+2026-01-13,Office rent,-822.1,Rent,
+2026-08-08,Client Gamma invoice payment,2553.04,Revenue,Client Gamma
+2026-02-06,Project management software,-43.55,Software,
+2026-03-20,Project management software,-54.85,Software,
+2026-02-16,Client Beta invoice payment,3229.98,Revenue,Client Beta
+2026-06-13,Office rent,-924.25,Rent,
+2026-05-21,Client dinner restaurant,-74.01,Meals,Client Alpha
+2026-01-16,Team salary payroll,-1560.54,Payroll,
+2026-06-24,Project management software,-48.56,Software,
+2026-03-22,Canva subscription,-15.65,Software,
+2026-04-27,Google Ads marketing,-275.19,Marketing,
+2026-07-23,Client Gamma invoice payment,2917.8,Revenue,Client Gamma
+2026-03-04,Client Beta invoice payment,3222.64,Revenue,Client Beta
+2026-05-15,Canva subscription,-17.08,Software,
+2026-07-06,Canva subscription,-14.18,Software,
+2026-01-19,Client Beta invoice payment,3158.71,Revenue,Client Beta
+2026-02-12,Internet utilities,-91.47,Utilities,
+2026-05-06,AWS cloud infrastructure,-155.33,Infrastructure,
+2026-06-21,Client Beta invoice payment,3417.16,Revenue,Client Beta
+2026-05-27,Internet utilities,-108.2,Utilities,
+2026-03-22,Google Ads marketing,-313.04,Marketing,
+2026-06-02,Canva subscription,-15.62,Software,
+2026-04-27,Client Beta invoice payment,3494.29,Revenue,Client Beta
+2026-03-11,Canva subscription,-16.2,Software,
+2026-01-17,Client Alpha invoice payment,4583.39,Revenue,Client Alpha
+2026-03-21,Business travel fuel,-145.7,Travel,
+2026-06-24,Canva subscription,-14.16,Software,
+2026-04-09,Business travel fuel,-135.03,Travel,
+2026-04-29,Google Ads marketing,-262.58,Marketing,
+2026-01-30,Canva subscription,-13.04,Software,
+2026-07-16,Google Ads marketing,-285.66,Marketing,
+2026-03-05,AWS cloud infrastructure,-176.22,Infrastructure,
+2026-08-12,Canva subscription,-13.15,Software,
+2026-04-25,AWS cloud infrastructure,-185.64,Infrastructure,
+2026-08-15,Client Gamma invoice payment,3024.98,Revenue,Client Gamma
+2026-08-10,Project management software,-7800,Software,
+2026-04-02,Business travel fuel,-159.85,Travel,
+2026-03-01,Client Gamma invoice payment,2368.94,Revenue,Client Gamma
+2026-02-08,Office rent,-1013.94,Rent,
+2026-01-04,Canva subscription,-16.86,Software,
+2026-02-16,Google Ads marketing,-301.77,Marketing,
+2026-02-07,AWS cloud infrastructure,-184.75,Infrastructure,
+2026-06-06,Team salary payroll,-1623.74,Payroll,
+2026-02-02,Client dinner restaurant,-96.35,Meals,Client Alpha
+2026-06-08,Business travel fuel,-150.24,Travel,
+2026-01-14,Canva subscription,-17.2,Software,
+2026-07-19,Business travel fuel,-155.86,Travel,
+2026-04-11,AWS cloud infrastructure,-176.7,Infrastructure,
+2026-01-27,Canva subscription,-15.89,Software,
+2026-01-16,Office rent,-828.61,Rent,
+2026-02-23,Canva subscription,-13.55,Software,
+2026-03-29,Team salary payroll,-1474.49,Payroll,
+2026-01-01,Team salary payroll,-1529.86,Payroll,
+2026-01-26,Google Ads marketing,-305.23,Marketing,
+2026-01-19,Office rent,-1000.01,Rent,
+2026-02-08,Business travel fuel,-130.65,Travel,
+2026-03-30,Team salary payroll,-1649.3,Payroll,
+2026-02-01,Client Beta invoice payment,3503.46,Revenue,Client Beta
+2026-04-30,Canva subscription,-15.14,Software,
+2026-01-22,Client Gamma invoice payment,2386.05,Revenue,Client Gamma
+2026-03-29,Client dinner restaurant,-79.68,Meals,Client Alpha
+2026-08-01,Client dinner restaurant,-76.78,Meals,Client Alpha
+2026-01-06,Office rent,-1105.63,Rent,
+2026-05-16,Google Ads marketing,-260.53,Marketing,
+2026-05-20,Client Alpha invoice payment,4620.79,Revenue,Client Alpha
+2026-03-18,Business travel fuel,-158.89,Travel,
+2026-06-28,Google Ads marketing,-326.74,Marketing,
+2026-02-12,Google Ads marketing,-320.37,Marketing,
+2026-05-17,Project management software,-54.25,Software,
+2026-03-26,Business travel fuel,-129.3,Travel,
+2026-07-27,Internet utilities,-111.63,Utilities,
+2026-08-07,Office rent,-1060.21,Rent,
+2026-07-29,AWS cloud infrastructure,-196.95,Infrastructure,
+2026-02-28,Office rent,-969.78,Rent,
+2026-04-02,Client dinner restaurant,-73.06,Meals,Client Alpha
+2026-01-08,Internet utilities,-89.51,Utilities,
+2026-03-08,Office rent,-1024.61,Rent,
+2026-03-30,Canva subscription,-16.75,Software,
+2026-07-05,Google Ads marketing,-337.89,Marketing,
+2026-04-04,Client Beta invoice payment,2860.53,Revenue,Client Beta
+2026-02-28,Canva subscription,-13.72,Software,
+2026-02-22,Canva subscription,-15.84,Software,
+2026-08-19,Team salary payroll,-1916.48,Payroll,
+2026-05-03,Business travel fuel,-134.89,Travel,
+2026-06-14,Client Beta invoice payment,3488.85,Revenue,Client Beta
+2026-01-31,AWS cloud infrastructure,-199.47,Infrastructure,
+2026-07-12,Office rent,-957.36,Rent,
+2026-02-15,AWS cloud infrastructure,-199.87,Infrastructure,
+2026-03-27,Client Beta invoice payment,3454.24,Revenue,Client Beta
+2026-07-04,AWS cloud infrastructure,-180.51,Infrastructure,
+2026-07-10,Client Beta invoice payment,3376.47,Revenue,Client Beta
+2026-02-13,Client Gamma invoice payment,2319.55,Revenue,Client Gamma
+2026-06-01,Canva subscription,-16.74,Software,
+2026-02-07,Team salary payroll,-1908.67,Payroll,
+2026-05-02,Business travel fuel,-162.31,Travel,
+2026-02-09,Project management software,-50.52,Software,
+2026-01-06,Client Alpha invoice payment,4677.91,Revenue,Client Alpha
+2026-07-05,Business travel fuel,-123.75,Travel,
+2026-07-11,Client Gamma invoice payment,2681.52,Revenue,Client Gamma
+2026-08-12,Office rent,-1066.5,Rent,
+2026-02-24,Client Alpha invoice payment,3919.04,Revenue,Client Alpha
+2026-03-16,Project management software,-45.54,Software,
+2026-05-31,Google Ads marketing,-271.32,Marketing,
+2026-04-18,Client Gamma invoice payment,2349.27,Revenue,Client Gamma
+2026-07-09,Google Ads marketing,-332.41,Marketing,
+2026-06-19,Team salary payroll,-1902.24,Payroll,
+2026-05-13,AWS cloud infrastructure,-202.13,Infrastructure,
+2026-08-13,Project management software,-43.76,Software,
+2026-02-08,Project management software,-49.91,Software,
+2026-08-12,Canva subscription,-16.59,Software,
+2026-06-05,Client Alpha invoice payment,4645.59,Revenue,Client Alpha
+2026-02-08,Client Gamma invoice payment,2421.13,Revenue,Client Gamma
+2026-06-08,Client dinner restaurant,-75.63,Meals,Client Alpha
+2026-01-16,Google Ads marketing,-311.8,Marketing,
+2026-05-16,Project management software,-49.45,Software,
+2026-07-18,Client Beta invoice payment,3538.54,Revenue,Client Beta
+2026-01-15,Office rent,-867.47,Rent,
+2026-01-11,Internet utilities,-83.81,Utilities,
+2026-04-26,Project management software,-42.1,Software,
+2026-08-17,Client Beta invoice payment,3088.44,Revenue,Client Beta
+2026-06-06,Project management software,-5200,Software,
+2026-06-27,Google Ads marketing,-319.77,Marketing,
+2026-05-17,Internet utilities,-95.74,Utilities,
+2026-03-05,Client dinner restaurant,-86.93,Meals,Client Alpha
+2026-08-13,Google Ads marketing,-369.45,Marketing,
+2026-08-17,Office rent,-1070.84,Rent,
+2026-02-05,AWS cloud infrastructure,-160.22,Infrastructure,
+2026-04-24,Google Ads marketing,-253.44,Marketing,
+2026-03-03,AWS cloud infrastructure,-157.34,Infrastructure,
+2026-06-21,Google Ads marketing,-354.78,Marketing,
+2026-08-18,Internet utilities,-85.59,Utilities,
+2026-07-03,Business travel fuel,-149.5,Travel,
+2026-02-06,Google Ads marketing,-365.23,Marketing,
+2026-04-30,Office rent,-1041.58,Rent,
+2026-01-25,AWS cloud infrastructure,-205.57,Infrastructure,
+2026-02-11,Business travel fuel,-157.46,Travel,
+2026-02-11,Client dinner restaurant,-84.35,Meals,Client Alpha
+2026-05-12,AWS cloud infrastructure,-173.14,Infrastructure,
+2026-02-20,Google Ads marketing,-276.98,Marketing,
+2026-07-04,Google Ads marketing,-248.36,Marketing,
+2026-05-22,Canva subscription,-14.93,Software,
+2026-01-05,AWS cloud infrastructure,-172.69,Infrastructure,
+2026-06-09,Google Ads marketing,-326.09,Marketing,
+2026-01-17,Client Beta invoice payment,3642.74,Revenue,Client Beta
+2026-07-21,Office rent,-1112.13,Rent,
+2026-01-27,Client Beta invoice payment,2906.67,Revenue,Client Beta
+2026-01-11,Internet utilities,-86.44,Utilities,
+2026-07-13,Client Gamma invoice payment,3025.42,Revenue,Client Gamma
+2026-08-06,Business travel fuel,-156.84,Travel,
+2026-03-08,AWS cloud infrastructure,-161.87,Infrastructure,
+2026-05-12,Team salary payroll,-1722.48,Payroll,
+2026-03-25,Client Beta invoice payment,2920.48,Revenue,Client Beta
+2026-07-24,Client dinner restaurant,-77.39,Meals,Client Alpha
+2026-08-18,Client Beta invoice payment,2910.11,Revenue,Client Beta
+2026-01-05,Business travel fuel,-123.09,Travel,
+2026-03-08,Client Beta invoice payment,3257.17,Revenue,Client Beta
+2026-02-26,Client Beta invoice payment,2905.53,Revenue,Client Beta
+2026-02-01,Canva subscription,-12.81,Software,
+2026-05-22,AWS cloud infrastructure,-208.04,Infrastructure,
+2026-03-10,Team salary payroll,-1517.5,Payroll,
+2026-05-15,Client dinner restaurant,-78.94,Meals,Client Alpha
+2026-01-29,Client Gamma invoice payment,2528.35,Revenue,Client Gamma
+2026-02-16,Office rent,-1099.76,Rent,
+2026-06-10,Google Ads marketing,-328.08,Marketing,
+2026-02-22,Google Ads marketing,-319.06,Marketing,
+2026-06-22,Client Gamma invoice payment,2536.04,Revenue,Client Gamma
+2026-07-25,Client Alpha invoice payment,4948.38,Revenue,Client Alpha
+2026-01-10,Client Alpha invoice payment,3595.55,Revenue,Client Alpha
+2026-05-10,Project management software,-57.47,Software,
+2026-05-12,Canva subscription,-13.97,Software,
+2026-04-25,Client Beta invoice payment,3308.46,Revenue,Client Beta
+2026-06-16,AWS cloud infrastructure,-192.0,Infrastructure,
+2026-05-20,AWS cloud infrastructure,-210.64,Infrastructure,
+2026-03-20,Client dinner restaurant,-78.29,Meals,Client Alpha
+2026-02-28,Google Ads marketing,-265.51,Marketing,
+2026-08-14,Client dinner restaurant,-92.69,Meals,Client Alpha
+2026-02-05,AWS cloud infrastructure,-211.77,Infrastructure,
+2026-01-14,Client Gamma invoice payment,2307.7,Revenue,Client Gamma
+2026-06-10,Client dinner restaurant,-96.93,Meals,Client Alpha
+2026-04-21,Client Gamma invoice payment,9500,Revenue,Client Gamma
+2026-08-04,AWS cloud infrastructure,-204.71,Infrastructure,
+2026-06-21,Google Ads marketing,-335.23,Marketing,
+2026-06-27,Google Ads marketing,-276.78,Marketing,
+2026-02-17,Client Gamma invoice payment,2534.71,Revenue,Client Gamma
+2026-01-01,Google Ads marketing,-310.45,Marketing,
+2026-03-26,Project management software,-46.88,Software,
+2026-01-09,Google Ads marketing,-295.01,Marketing,
+2026-02-16,Client Alpha invoice payment,4034.77,Revenue,Client Alpha
+2026-01-22,Canva subscription,-14.13,Software,
+2026-06-17,Office rent,-885.3,Rent,
+2026-07-18,Client Alpha invoice payment,3695.92,Revenue,Client Alpha
+2026-07-29,Client Beta invoice payment,2782.17,Revenue,Client Beta
+2026-05-31,Client Alpha invoice payment,4116.05,Revenue,Client Alpha
+2026-03-18,Google Ads marketing,-338.49,Marketing,
+2026-01-22,Team salary payroll,-1982.23,Payroll,
+2026-08-07,Internet utilities,-85.62,Utilities,
+2026-08-17,Client dinner restaurant,-94.24,Meals,Client Alpha
+2026-06-02,AWS cloud infrastructure,-198.4,Infrastructure,
+2026-07-04,Canva subscription,-13.49,Software,
+2026-07-05,Team salary payroll,-1805.85,Payroll,
+2026-01-12,Client dinner restaurant,-97.27,Meals,Client Alpha
+2026-06-10,AWS cloud infrastructure,-196.59,Infrastructure,
+2026-07-27,Project management software,-43.9,Software,
+2026-05-15,Internet utilities,-96.56,Utilities,
+2026-08-02,Internet utilities,-81.25,Utilities,
+2026-06-25,Team salary payroll,-1892.66,Payroll,
+2026-07-02,Business travel fuel,-163.17,Travel,
+2026-06-14,Office rent,-834.18,Rent,
+2026-01-11,Client Gamma invoice payment,2862.67,Revenue,Client Gamma
+2026-01-27,AWS cloud infrastructure,-202.65,Infrastructure,
+2026-05-23,Client Alpha invoice payment,4440.09,Revenue,Client Alpha
