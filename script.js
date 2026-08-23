@@ -24,10 +24,3 @@ menu?.addEventListener('click', () => {
 document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => {
   if (window.innerWidth <= 850 && links) { links.style.display = ''; links.dataset.open = 'false'; }
 }));
-
-setTimeout(() => {
-  const s = document.createElement('script');
-  s.src = 'portfolio-enhance.js?v=2';
-  s.async = false;
-  document.body.appendChild(s);
-}, 700);
