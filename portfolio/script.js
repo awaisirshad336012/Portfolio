@@ -1,3 +1,1 @@
-const revealItems=document.querySelectorAll('.reveal');
-const observer=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.08});
-revealItems.forEach((item)=>observer.observe(item));
+const menu=document.getElementById('menu');const nav=document.querySelector('nav');menu?.addEventListener('click',()=>{const open=nav.dataset.open==='1';nav.dataset.open=open?'0':'1';nav.style.display=open?'':'flex';if(!open)Object.assign(nav.style,{position:'absolute',top:'62px',left:'0',right:'0',padding:'20px',background:'#070a10',flexDirection:'column',borderBottom:'1px solid #222b38'});});document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=850){nav.style.display='';nav.dataset.open='0'}}));
