@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Data (don't commit scraped data / DB)
+data/raw/*
+data/processed/*
+data/historical/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/historical/.gitkeep
+*.db
+*.sqlite3
+
+# Models
+models/saved_models/*
+!models/saved_models/.gitkeep
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Env vars / secrets
+.env

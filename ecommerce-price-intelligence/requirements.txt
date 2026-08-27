@@ -1,0 +1,24 @@
+# Scraping
+requests
+beautifulsoup4
+lxml
+selenium>=4.6   # auto-manages chromedriver; needs local Chrome/Chromium installed
+
+# Data
+pandas
+numpy
+
+# Database: sqlite3 is in the Python standard library, no install needed
+
+# ML
+scikit-learn
+joblib
+# xgboost        # optional upgrade over RandomForest once more data is available
+
+# Visualization / App
+matplotlib
+plotly
+streamlit
+
+# Testing
+pytest
