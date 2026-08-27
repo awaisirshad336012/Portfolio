@@ -4,7 +4,7 @@ const voiceIntro=document.getElementById('voiceIntro');
 const voiceToggle=document.getElementById('voiceToggle');
 const chatVoice=document.getElementById('chatVoice');
 const status=document.getElementById('agentStatus');
-let voiceEnabled=false;let introDone=false;
+let voiceEnabled=true;let introDone=false;let voiceReady=false;
 
 /* Cinematic welcome-screen redesign */
 if(boot){
@@ -18,8 +18,9 @@ if(boot){
       <p class="welcome-manifesto">I TURN DATA INTO <strong>INTELLIGENCE.</strong></p>
       <div class="welcome-actions">
         <button id="enter" type="button"><span>EXPLORE MY WORK</span><b>↗</b></button>
-        <button id="voiceIntro" class="voice-intro" type="button">◉ HEAR INTRODUCTION</button>
+        <button id="voiceIntro" class="voice-intro" type="button">◉ VOICE INTRO ON</button>
       </div>
+      <div class="voice-note">Awais AI will welcome you</div>
     </div>
     <div class="welcome-footer"><span>AI / ML ENGINEER</span><span>PYTHON · AI · AUTOMATION</span></div>`;
 
@@ -39,7 +40,7 @@ if(boot){
   .welcome-name{font:700 clamp(58px,11vw,142px)/.78 'Space Grotesk';letter-spacing:-7px;margin:0;color:#f4f2ec;display:flex;flex-direction:column;animation:welcomeName 1.3s .25s cubic-bezier(.16,1,.3,1) both}.welcome-name span:last-child{color:#c8ff3d}
   .welcome-portfolio{font:500 clamp(16px,2.3vw,26px) 'DM Mono';letter-spacing:13px;margin:25px 0 28px;color:#d7d5cc;animation:welcomeUp .9s .55s both}
   .welcome-manifesto{font:500 clamp(11px,1.2vw,14px) 'DM Mono';letter-spacing:2.5px;color:#85877e;margin:0;animation:welcomeUp .9s .7s both}.welcome-manifesto strong{color:#f4f2ec;font-weight:500}
-  .welcome-actions{margin-top:38px;display:flex;align-items:center;gap:20px;animation:welcomeUp .9s .85s both}.welcome-actions #enter{margin:0;border:1px solid #c8ff3d;background:#c8ff3d;color:#080a06;border-radius:999px;padding:14px 20px;font:700 9px 'DM Mono';letter-spacing:1.5px;cursor:pointer;box-shadow:0 0 35px #c8ff3d1c;transition:.3s}.welcome-actions #enter:hover{transform:translateY(-3px);box-shadow:0 0 55px #c8ff3d45}.welcome-actions #enter b{font-size:13px;margin-left:8px}.welcome-actions .voice-intro{background:none;border:0;color:#74776d;font:9px 'DM Mono';letter-spacing:1px;cursor:pointer}.welcome-actions .voice-intro:hover{color:#c8ff3d}
+  .welcome-actions{margin-top:38px;display:flex;align-items:center;gap:20px;animation:welcomeUp .9s .85s both}.welcome-actions #enter{margin:0;border:1px solid #c8ff3d;background:#c8ff3d;color:#080a06;border-radius:999px;padding:14px 20px;font:700 9px 'DM Mono';letter-spacing:1.5px;cursor:pointer;box-shadow:0 0 35px #c8ff3d1c;transition:.3s}.welcome-actions #enter:hover{transform:translateY(-3px);box-shadow:0 0 55px #c8ff3d45}.welcome-actions #enter b{font-size:13px;margin-left:8px}.welcome-actions .voice-intro{background:none;border:0;color:#74776d;font:9px 'DM Mono';letter-spacing:1px;cursor:pointer}.welcome-actions .voice-intro:hover{color:#c8ff3d}.voice-note{margin-top:12px;color:#55594f;font:8px 'DM Mono';letter-spacing:1px;animation:welcomeUp .9s 1s both}
   .welcome-footer{position:absolute;z-index:2;left:28px;right:28px;bottom:25px;display:flex;justify-content:space-between;color:#4f534b;font:8px 'DM Mono';letter-spacing:2px}.welcome-footer span:last-child{color:#62675d}
   @keyframes welcomePulse{50%{transform:translate(-50%,-50%) scale(1.13);opacity:.65}}@keyframes welcomeSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes welcomeFloat{50%{transform:translate(18px,-22px);opacity:.9}}@keyframes welcomeScan{50%{transform:scaleX(.55);opacity:.15}}@keyframes welcomeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}@keyframes welcomeName{from{opacity:0;transform:scale(.88);filter:blur(10px);letter-spacing:8px}to{opacity:1;transform:none;filter:none;letter-spacing:-7px}}
   @media(max-width:600px){.welcome-name{letter-spacing:-4px}.welcome-portfolio{letter-spacing:7px}.welcome-actions{flex-direction:column;gap:14px}.welcome-footer{left:18px;right:18px}.welcome-footer span:last-child{display:none}.ring-one{width:110vw;height:110vw}.ring-two{width:75vw;height:75vw}}
@@ -47,12 +48,16 @@ if(boot){
   document.head.appendChild(style);
 }
 
-const speak=(text)=>{if(!voiceEnabled||!('speechSynthesis'in window))return;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.rate=.95;u.pitch=1.02;u.volume=.9;window.speechSynthesis.speak(u)};
-const launch=()=>{if(introDone)return;introDone=true;boot?.classList.add('exit');document.body.classList.remove('lock');if(status)status.textContent='Welcome — explore Awais\'s work';if(voiceEnabled)speak('Welcome to Awais Irshad portfolio. I am Awais AI Agent. Let me show you what Awais builds.');setTimeout(()=>boot?.remove(),1100)};
-document.getElementById('enter')?.addEventListener('click',launch);
-document.getElementById('voiceIntro')?.addEventListener('click',()=>{voiceEnabled=true;const b=document.getElementById('voiceIntro');if(b){b.textContent='✓ VOICE ENABLED';b.style.color='#c8ff3d'}speak('Hi, welcome to Awais Irshad portfolio. I am Awais AI Agent, your portfolio guide. Let me show you what Awais builds.');});
+const pickVoice=()=>{if(!('speechSynthesis'in window))return null;const voices=window.speechSynthesis.getVoices();const preferred=voices.find(v=>/en-US/i.test(v.lang)&&/Microsoft|Google|Samantha|Daniel|Natural/i.test(v.name))||voices.find(v=>/^en-US/i.test(v.lang))||voices.find(v=>/^en/i.test(v.lang));return preferred||voices[0]||null;};
+if('speechSynthesis'in window){window.speechSynthesis.onvoiceschanged=()=>{voiceReady=true;};setTimeout(()=>{voiceReady=true;},500);}
+const speak=(text)=>{if(!voiceEnabled||!('speechSynthesis'in window))return false;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);const v=pickVoice();if(v)u.voice=v;u.rate=.92;u.pitch=.98;u.volume=1;window.speechSynthesis.speak(u);return true;};
+const introText='Welcome to Awais Irshad portfolio. I am Awais AI, your personal portfolio guide. Awais is an AI and machine learning engineer focused on Python, generative AI, intelligent automation, and practical AI applications. Let me introduce you to his work.';
+const launch=()=>{if(introDone)return;introDone=true;boot?.classList.add('exit');document.body.classList.remove('lock');if(status)status.textContent='Welcome — Awais AI is guiding you';if(voiceEnabled){setTimeout(()=>speak(introText),350);}setTimeout(()=>boot?.remove(),1100)};
+document.getElementById('enter')?.addEventListener('click',()=>{voiceEnabled=true;launch();});
+document.getElementById('voiceIntro')?.addEventListener('click',()=>{voiceEnabled=true;const b=document.getElementById('voiceIntro');if(b){b.textContent='✓ VOICE INTRO ENABLED';b.style.color='#c8ff3d'}speak(introText);});
 voiceToggle?.addEventListener('click',()=>{voiceEnabled=!voiceEnabled;voiceToggle.textContent=voiceEnabled?'◉ VOICE ON':'◉ VOICE';voiceToggle.style.color=voiceEnabled?'#c8ff3d':'';if(!voiceEnabled)window.speechSynthesis?.cancel();else speak('Voice assistant is now on.');});
-setTimeout(launch,8500);
+/* Automatically enter and introduce Awais when the visitor arrives. */
+setTimeout(launch,5200);
 
 /* Add the latest confirmed projects without touching their project folders. */
 const projectGrid=document.querySelector('.project-grid');
