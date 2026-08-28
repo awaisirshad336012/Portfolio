@@ -1,0 +1,26 @@
+/* Premium cinematic welcome-screen polish */
+#boot{background:#030405!important}
+.welcome-atmosphere{background:radial-gradient(circle at 72% 42%,rgba(45,92,118,.16),transparent 25%),radial-gradient(circle at 25% 55%,rgba(208,158,86,.08),transparent 30%),#030405!important}
+.welcome-atmosphere:before{content:"";position:absolute;inset:12% 52% 12% 4%;border:1px solid rgba(216,169,99,.12);border-radius:50%;filter:blur(.2px);animation:welcomeOrbitSlow 18s linear infinite}
+.welcome-orb{left:72%!important;top:48%!important;width:420px!important;height:420px!important;background:radial-gradient(circle,rgba(77,168,214,.13),rgba(45,92,118,.04) 35%,transparent 68%)!important}
+.ring-one{left:72%!important;top:48%!important;width:min(58vw,680px)!important;height:min(58vw,680px)!important;border-color:rgba(95,180,220,.18)!important}
+.ring-two{left:72%!important;top:48%!important;width:min(39vw,450px)!important;height:min(39vw,450px)!important;border-color:rgba(216,169,99,.2)!important}
+.welcome-copy{width:min(1180px,92%)!important;align-items:flex-start!important;text-align:left!important;margin-left:5%!important}
+.welcome-kicker{color:#aaa79f!important;letter-spacing:5px!important;margin-bottom:20px!important}
+.welcome-kicker span{background:#d8a963!important;box-shadow:0 0 14px rgba(216,169,99,.7)!important}
+.welcome-name{font-family:'Cormorant Garamond',Georgia,serif!important;font-weight:600!important;letter-spacing:-5px!important;line-height:.78!important;font-size:clamp(76px,10vw,150px)!important;color:#f3f0e9!important;text-shadow:0 0 28px rgba(255,255,255,.04)!important}
+.welcome-name span{display:block!important;white-space:nowrap!important}
+.welcome-name span:last-child{color:#e8e1d5!important}
+.welcome-portfolio{font-family:'DM Mono',monospace!important;letter-spacing:10px!important;color:#65b9e8!important;margin:24px 0 30px!important}
+.welcome-manifesto{font-size:clamp(12px,1.35vw,15px)!important;letter-spacing:2.4px!important;color:#999a95!important}
+.welcome-manifesto strong{color:#d8a963!important}
+.welcome-actions #enter{background:transparent!important;color:#eee9df!important;border:1px solid rgba(216,169,99,.55)!important;box-shadow:0 0 35px rgba(216,169,99,.08)!important;padding:15px 24px!important}
+.welcome-actions #enter:hover{background:#d8a963!important;color:#090909!important;box-shadow:0 0 45px rgba(216,169,99,.28)!important}
+.welcome-actions .voice-intro{color:#777b78!important}
+.voice-note{color:#555b5c!important}
+.welcome-footer{color:#4d5558!important}
+.welcome-footer span:last-child{color:#6b777b!important}
+.p-one,.p-two,.p-three{background:#65b9e8!important;box-shadow:0 0 18px #65b9e8!important}
+.line-one,.line-two{background:linear-gradient(90deg,transparent,rgba(101,185,232,.35),transparent)!important}
+@keyframes welcomeOrbitSlow{to{transform:rotate(360deg)}}
+@media(max-width:800px){.welcome-copy{margin-left:0!important;align-items:center!important;text-align:center!important}.welcome-orb,.ring-one,.ring-two{left:50%!important}.welcome-name{font-size:clamp(64px,16vw,100px)!important;letter-spacing:-3px!important}.welcome-portfolio{letter-spacing:7px!important}}
