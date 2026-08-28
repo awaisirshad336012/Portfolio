@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
 /* Premium cinematic welcome-screen polish */
 #boot{background:#030405!important}
 .welcome-atmosphere{background:radial-gradient(circle at 72% 42%,rgba(45,92,118,.16),transparent 25%),radial-gradient(circle at 25% 55%,rgba(208,158,86,.08),transparent 30%),#030405!important}
