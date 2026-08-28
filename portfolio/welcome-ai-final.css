@@ -1,0 +1,30 @@
+/* Final identity scene: AI intelligence presence beside Awais Irshad */
+.final-copy{width:min(1320px,94vw);display:flex;align-items:center;justify-content:center;gap:clamp(28px,5vw,90px);text-align:left;}
+.final-copy-text{position:relative;z-index:2;min-width:0;}
+.final-copy .kicker{margin-bottom:14px;text-align:left;}
+.final-copy h1{font-size:clamp(58px,8.2vw,132px);}
+.final-copy .portfolio{text-align:left;margin-left:2px;}
+.final-copy .manifesto{text-align:left;}
+.final-copy .cta{margin-left:0;}
+.final-ai{position:relative;z-index:1;flex:0 0 clamp(260px,27vw,420px);width:clamp(260px,27vw,420px);height:clamp(300px,36vw,500px);display:grid;place-items:center;opacity:0;transform:translateX(40px) scale(.88);animation:finalAiReveal 1.8s 6.45s cubic-bezier(.16,1,.3,1) forwards;filter:drop-shadow(0 0 35px rgba(121,191,232,.16));}
+.final-ai-glow{position:absolute;width:78%;height:78%;border-radius:50%;background:radial-gradient(circle,rgba(121,191,232,.16),rgba(216,170,104,.07) 35%,transparent 68%);filter:blur(18px);animation:finalAiPulse 4s ease-in-out infinite;}
+.final-ai-rings{position:absolute;inset:8%;border-radius:50%;transform:rotate(-14deg);}
+.final-ai-rings i{position:absolute;inset:0;border:1px solid rgba(121,191,232,.28);border-radius:50%;box-shadow:0 0 20px rgba(121,191,232,.05);}
+.final-ai-rings i:nth-child(1){transform:rotate(58deg) scaleX(.62);border-color:rgba(216,170,104,.48);}
+.final-ai-rings i:nth-child(2){transform:rotate(-28deg) scaleY(.58);border-color:rgba(121,191,232,.42);}
+.final-ai-rings i:nth-child(3){inset:12%;transform:rotate(12deg) scaleX(.76);border-style:dashed;border-color:rgba(121,191,232,.25);animation:finalRingSpin 18s linear infinite;}
+.final-ai-face{position:relative;width:58%;height:74%;border:1px solid rgba(121,191,232,.72);border-radius:52% 46% 48% 44%;background:radial-gradient(circle at 42% 38%,rgba(121,191,232,.18),transparent 42%),linear-gradient(145deg,rgba(121,191,232,.11),rgba(216,170,104,.025));clip-path:polygon(20% 3%,68% 0,88% 18%,92% 42%,79% 64%,68% 92%,43% 100%,22% 82%,10% 55%,13% 24%);box-shadow:inset 0 0 45px rgba(121,191,232,.1),0 0 45px rgba(121,191,232,.12);overflow:visible;}
+.final-ai-face:before{content:"";position:absolute;inset:8%;background:radial-gradient(circle at 46% 40%,rgba(255,255,255,.08),transparent 30%);clip-path:inherit;}
+.final-ai-face .eye{position:absolute;top:40%;width:11px;height:6px;border-radius:50%;background:#79bfe8;box-shadow:0 0 16px #79bfe8,0 0 30px rgba(121,191,232,.55);animation:finalEye 3.8s ease-in-out infinite;}
+.final-ai-face .e1{left:28%;}.final-ai-face .e2{right:25%;}
+.final-ai-face .ai-line{position:absolute;height:1px;background:linear-gradient(90deg,transparent,#79bfe8,#d8aa68,transparent);box-shadow:0 0 10px rgba(121,191,232,.45);opacity:.65;transform-origin:left center;}
+.final-ai-face .l1{width:48%;left:12%;top:27%;transform:rotate(-17deg)}.final-ai-face .l2{width:52%;left:43%;top:61%;transform:rotate(-8deg)}.final-ai-face .l3{width:38%;left:21%;top:73%;transform:rotate(9deg);background:linear-gradient(90deg,transparent,#d8aa68,transparent)}
+.final-ai .ai-node{position:absolute;width:7px;height:7px;border-radius:50%;background:#79bfe8;box-shadow:0 0 15px #79bfe8;animation:finalNode 2.8s ease-in-out infinite;}
+.final-ai .an1{left:13%;top:30%}.final-ai .an2{right:11%;top:44%;animation-delay:.7s}.final-ai .an3{left:23%;bottom:18%;animation-delay:1.2s;background:#d8aa68;box-shadow:0 0 15px #d8aa68}.final-ai .an4{right:20%;bottom:25%;animation-delay:1.8s}
+.final-ai:after{content:"";position:absolute;left:18%;right:18%;bottom:9%;height:1px;background:linear-gradient(90deg,transparent,rgba(121,191,232,.25),rgba(216,170,104,.5),rgba(121,191,232,.25),transparent);box-shadow:0 0 25px rgba(121,191,232,.12);}
+@keyframes finalAiReveal{0%{opacity:0;transform:translateX(80px) scale(.72);filter:blur(10px)}55%{opacity:1;transform:translateX(0) scale(1);filter:blur(0)}100%{opacity:1;transform:translateX(0) scale(1)}}
+@keyframes finalAiPulse{50%{transform:scale(1.08);opacity:.78}}
+@keyframes finalRingSpin{to{transform:rotate(372deg) scaleX(.76)}}
+@keyframes finalEye{0%,43%,48%,100%{transform:scaleY(1);opacity:1}45%,47%{transform:scaleY(.15);opacity:.5}}
+@keyframes finalNode{50%{transform:scale(1.8);opacity:.55}}
+@media(max-width:800px){.final-copy{flex-direction:column;gap:10px;transform:translate(-50%,-47%) translateY(35px);}.final-copy-text{order:1;text-align:center}.final-copy .kicker,.final-copy .portfolio,.final-copy .manifesto{text-align:center}.final-copy .cta{margin-left:auto;margin-right:auto}.final-ai{order:2;flex-basis:210px;width:210px;height:220px}.final-copy h1{font-size:clamp(54px,15vw,88px)}}
