@@ -1,0 +1,41 @@
+/* Cinematic welcome sequence: visual story only, no numbered captions. */
+#boot.cinematic-welcome{background:radial-gradient(circle at 72% 48%,rgba(44,88,116,.10),transparent 34%),#040506!important;color:#f2eee6!important;}
+#boot.cinematic-welcome:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background-image:radial-gradient(circle at 18% 24%,rgba(216,170,104,.55) 0 1px,transparent 1.5px),radial-gradient(circle at 82% 19%,rgba(121,191,232,.5) 0 1px,transparent 1.5px),radial-gradient(circle at 68% 76%,rgba(216,170,104,.35) 0 1px,transparent 1.5px);background-size:210px 170px,270px 230px,190px 210px;opacity:.35;animation:starfield 9s linear infinite;}
+#boot.cinematic-welcome:after{content:"";position:absolute;inset:-20%;pointer-events:none;z-index:1;background:repeating-linear-gradient(105deg,transparent 0 9px,rgba(121,191,232,.045) 10px,transparent 11px 26px);transform:translateY(-8%);opacity:0;animation:cosmicRain 1.4s ease-out forwards;}
+#boot.cinematic-welcome .welcome-atmosphere{z-index:2!important;}
+#boot.cinematic-welcome .welcome-orb{width:20vw;height:20vw;right:18%;top:24%;background:radial-gradient(circle,rgba(216,170,104,.28),rgba(121,191,232,.10) 30%,transparent 70%);opacity:0;animation:starIgnite 1.8s .3s ease-out forwards,orbBreath 4s 2.2s ease-in-out infinite;}
+#boot.cinematic-welcome .welcome-ring{opacity:0;}
+#boot.cinematic-welcome .ring-one{animation:ringAppear 1s 1.35s ease-out forwards,ringRotate 16s 2.2s linear infinite;}
+#boot.cinematic-welcome .ring-two{animation:ringAppear 1s 1.65s ease-out forwards,ringRotateReverse 20s 2.2s linear infinite;}
+#boot.cinematic-welcome .welcome-spark{opacity:0!important;}
+#boot.cinematic-welcome .spark-one{left:69%;top:39%;animation:heroSpark 2s .45s ease-in-out forwards!important;}
+#boot.cinematic-welcome .spark-two{left:72%;top:44%;animation:heroSparkSmall 2.4s 1.2s ease-in-out forwards!important;}
+#boot.cinematic-welcome .welcome-particle{opacity:0!important;}
+#boot.cinematic-welcome .p-one{animation:particleRise 2.8s 2s ease-out forwards!important}.p-two{animation:particleRise 3s 2.2s ease-out forwards!important}.p-three{animation:particleRise 3.2s 2.4s ease-out forwards!important}.p-four{animation:particleRise 2.9s 2.6s ease-out forwards!important}.p-five{animation:particleRise 3.1s 2.8s ease-out forwards!important}
+#boot.cinematic-welcome .welcome-line{opacity:0!important;animation:lightSweep 2s 1.5s ease-out forwards!important;}
+#boot.cinematic-welcome .welcome-data-word,#boot.cinematic-welcome .welcome-intelligence-word{opacity:0!important;z-index:3!important;text-shadow:0 0 45px rgba(121,191,232,.12);}
+#boot.cinematic-welcome .welcome-data-word{left:13%;top:31%;color:rgba(121,191,232,.82)!important;animation:wordJourney 3.8s 2.1s ease-in-out forwards!important;}
+#boot.cinematic-welcome .welcome-intelligence-word{right:8%;bottom:24%;color:rgba(216,170,104,.82)!important;animation:intelligenceJourney 3.8s 3.4s ease-in-out forwards!important;}
+#boot.cinematic-welcome .welcome-ai-presence{z-index:4!important;opacity:0!important;right:19%;top:27%;animation:aiReveal 2.5s 4.5s ease-in-out forwards!important;}
+#boot.cinematic-welcome .welcome-copy{z-index:8!important;opacity:0!important;visibility:hidden!important;transform:translateY(18px) scale(.98);animation:welcomeReveal 1.9s 5.75s cubic-bezier(.16,1,.3,1) forwards!important;}
+#boot.cinematic-welcome .welcome-kicker{opacity:0;animation:copyIn .8s 5.8s ease-out forwards;}
+#boot.cinematic-welcome .welcome-name{opacity:0;animation:nameIn 1.2s 6s cubic-bezier(.16,1,.3,1) forwards;}
+#boot.cinematic-welcome .welcome-portfolio{opacity:0;animation:copyIn .8s 6.55s ease-out forwards;}
+#boot.cinematic-welcome .welcome-manifesto{opacity:0;animation:copyIn .8s 6.8s ease-out forwards;}
+#boot.cinematic-welcome .welcome-actions{opacity:0;animation:copyIn .8s 7.2s ease-out forwards;}
+#boot.cinematic-welcome .voice-note{opacity:0;animation:copyIn .7s 7.5s ease-out forwards;}
+#boot.cinematic-welcome .welcome-footer{opacity:0!important;animation:copyIn .8s 7.35s ease-out forwards!important;}
+#boot.cinematic-welcome .welcome-name span:last-child{color:#eee8dd!important;}
+#boot.cinematic-welcome .welcome-portfolio{color:#79bfe8!important;}
+#boot.cinematic-welcome .welcome-manifesto strong{color:#d8aa68!important;}
+#boot.cinematic-welcome .welcome-copy:before{content:"AI  ·  ML  ·  PYTHON  ·  RAG  ·  AUTOMATION";position:absolute;left:50%;top:-56px;transform:translateX(-50%);white-space:nowrap;font:500 10px/1 'DM Mono';letter-spacing:4px;color:rgba(121,191,232,.52);opacity:0;animation:copyIn .8s 5.55s ease-out forwards;}
+@keyframes starfield{to{background-position:20px 35px,-25px 18px,30px -25px}}@keyframes cosmicRain{0%{opacity:0;transform:translateY(-8%)}35%{opacity:.8}100%{opacity:.12;transform:translateY(12%)}}
+@keyframes starIgnite{0%{opacity:0;transform:scale(.1)}35%{opacity:1;transform:scale(.55)}60%{opacity:.8;transform:scale(1.15)}100%{opacity:.48;transform:scale(1)}}@keyframes orbBreath{50%{transform:scale(1.08)}}
+@keyframes ringAppear{to{opacity:.55}}@keyframes ringRotate{to{transform:rotate(360deg)}}@keyframes ringRotateReverse{to{transform:rotate(-360deg)}}
+@keyframes heroSpark{0%{opacity:0;transform:scale(.2)}28%{opacity:1;transform:scale(1)}45%{opacity:.35;transform:scale(2.8)}70%{opacity:1;transform:scale(1.4)}100%{opacity:0;transform:scale(5)}}@keyframes heroSparkSmall{0%,100%{opacity:0}35%{opacity:1}55%{opacity:.2;transform:scale(3)}70%{opacity:1}}
+@keyframes particleRise{0%{opacity:0;transform:translateY(30px) scale(.3)}35%{opacity:.85}100%{opacity:0;transform:translate(-40px,-65px) scale(1.3)}}@keyframes lightSweep{0%{opacity:0;transform:scaleX(.15)}45%{opacity:.6;transform:scaleX(1)}100%{opacity:0}}
+@keyframes wordJourney{0%{opacity:0;transform:translate(-20px,10px) scale(.9)}22%{opacity:.9}55%{opacity:.35;transform:translate(30px,-8px) scale(1.02)}100%{opacity:0;transform:translate(90px,-40px) scale(1.12)}}@keyframes intelligenceJourney{0%{opacity:0;transform:translate(35px,15px) scale(.9)}25%{opacity:.9}58%{opacity:.35;transform:translate(-20px,-12px) scale(1.02)}100%{opacity:0;transform:translate(-90px,-50px) scale(1.12)}}
+@keyframes aiReveal{0%{opacity:0;transform:scale(.75) translateY(20px)}35%{opacity:.78}70%{opacity:.5}100%{opacity:.34;transform:scale(1) translateY(0)}}
+@keyframes welcomeReveal{to{opacity:1;visibility:visible;transform:none}}@keyframes copyIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}@keyframes nameIn{from{opacity:0;letter-spacing:.18em;transform:translateY(22px) scale(.96)}to{opacity:1;letter-spacing:normal;transform:none}}
+@media(max-width:700px){#boot.cinematic-welcome .welcome-copy:before{font-size:8px;letter-spacing:2px;top:-40px}.welcome-data-word{left:3%!important}.welcome-intelligence-word{right:-4%!important}.welcome-ai-presence{right:7%!important;opacity:.28!important}}
+@media(prefers-reduced-motion:reduce){#boot.cinematic-welcome:after,#boot.cinematic-welcome:before,#boot.cinematic-welcome *{animation-duration:.01ms!important;animation-iteration-count:1!important}}
