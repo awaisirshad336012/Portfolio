@@ -1,0 +1,35 @@
+/* Full-screen automated 01 → 08 welcome story */
+.welcome-story{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+  left:0!important;right:0!important;bottom:auto!important;display:block!important;
+  border:0!important;z-index:8!important;pointer-events:none!important;overflow:hidden!important;
+}
+.welcome-story:after{content:"";position:absolute;left:8%;right:8%;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(121,191,232,.18),transparent);transform:scaleX(.35);opacity:.45;}
+.story-stage{
+  position:absolute!important;inset:0!important;display:flex!important;flex-direction:column!important;
+  align-items:center!important;justify-content:center!important;text-align:center!important;
+  border:0!important;padding:0 8vw!important;background:transparent!important;
+  opacity:0!important;visibility:hidden!important;transform:translateY(24px) scale(.98)!important;
+  transition:opacity .65s ease,transform .9s cubic-bezier(.16,1,.3,1),visibility .65s!important;
+}
+.story-stage.active{opacity:1!important;visibility:visible!important;transform:none!important;background:transparent!important;}
+.story-stage small{font:500 clamp(11px,1vw,14px) 'DM Mono'!important;letter-spacing:5px!important;color:#d8aa68!important;margin:0 0 18px!important;}
+.story-stage b{font:600 clamp(12px,1.4vw,18px) 'DM Mono'!important;letter-spacing:5px!important;color:#eee8dd!important;white-space:normal!important;}
+.story-stage span{font:400 clamp(12px,1.3vw,17px) 'Inter'!important;line-height:1.6!important;color:#78848b!important;margin:15px auto 0!important;max-width:620px!important;}
+.story-stage strong{font:500 clamp(52px,10vw,150px) 'Cormorant Garamond'!important;letter-spacing:-2px!important;line-height:.9!important;color:#79bfe8!important;margin-top:24px!important;white-space:normal!important;text-shadow:0 0 55px rgba(121,191,232,.18)!important;}
+.story-stage[data-stage="01"]:before{content:""!important;position:relative!important;width:9px!important;height:9px!important;left:auto!important;top:auto!important;border-radius:50%!important;background:#79bfe8!important;box-shadow:0 0 12px #79bfe8,0 0 60px rgba(121,191,232,.55)!important;animation:welcomeSpark 1.7s ease-in-out infinite!important;margin-bottom:24px!important;}
+.story-stage[data-stage="02"]:before{content:"AI"!important;position:relative!important;right:auto!important;top:auto!important;font:500 10px 'DM Mono'!important;letter-spacing:4px!important;color:#79bfe8!important;margin-bottom:18px!important;}
+.story-stage[data-stage="06"] strong{font-size:clamp(72px,13vw,190px)!important;color:#f2eee6!important;text-shadow:0 0 60px rgba(242,238,230,.08)!important;}
+.story-stage[data-stage="07"] strong{font-size:clamp(22px,3vw,42px)!important;color:#d8aa68!important;letter-spacing:4px!important;}
+.welcome-copy{opacity:0!important;visibility:hidden!important;transition:opacity .8s ease,visibility .8s!important;}
+.welcome-story:has(.story-stage[data-stage="08"].active) ~ .welcome-copy{opacity:1!important;visibility:visible!important;}
+.welcome-story:has(.story-stage[data-stage="08"].active) ~ .welcome-footer{opacity:1!important;}
+.welcome-footer{opacity:0!important;transition:opacity .7s ease!important;z-index:10!important;}
+@keyframes welcomeSpark{50%{transform:scale(2.8);opacity:.4}}
+@media(max-width:900px){
+ .story-stage{padding:0 7vw!important}.story-stage b{letter-spacing:3px!important}.story-stage strong{margin-top:18px!important}.welcome-story:after{left:12%;right:12%}
+}
+@media(max-width:600px){
+ .story-stage{padding:0 24px!important}.story-stage b{font-size:10px!important;letter-spacing:2.5px!important}.story-stage span{font-size:11px!important;max-width:320px!important}.story-stage strong{font-size:48px!important}.story-stage[data-stage="06"] strong{font-size:74px!important}.story-stage[data-stage="07"] strong{font-size:18px!important;letter-spacing:2px!important}.welcome-copy{transform:none!important}
+}
+@media(prefers-reduced-motion:reduce){.story-stage{transition:none!important}.story-stage[data-stage="01"]:before{animation:none!important}}
